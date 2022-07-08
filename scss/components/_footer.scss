@@ -1,0 +1,27 @@
+.footer {
+
+    background: linear-gradient(119.83deg, #0000C8 1.42%, #000068 90.31%);
+    &__wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 70px 15px;
+    }
+    &__block-one {
+    }
+    &__list {
+    }
+    &__item {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 145%;
+        /* or 23px */
+
+        letter-spacing: 0.02em;
+
+        color: #FFFFFF;
+    }
+    &__link {
+    }
+    &__block-two {
+    }
+}

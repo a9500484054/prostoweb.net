@@ -1,0 +1,121 @@
+.whom {
+    background: linear-gradient(119.83deg, #0000C8 1.42%, #000068 90.31%);
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 56px 30px;
+    }
+    &__block-one {
+        margin-bottom: 40px;
+    }
+}
+
+.block-one {
+    &__title {
+        margin-bottom: 33px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 105%;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+    }
+    &__text {
+        margin-bottom: 33px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+    }
+}
+
+.block-two {
+    position: relative;
+    display: flex;
+    max-width: 813px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    &__btn {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 78px;
+        height: 78px;
+
+        font-weight: 700;
+        font-size: 42.12px;
+        line-height: 105%;
+        text-align: center;
+        letter-spacing: 0.02em;
+
+        color: #FFFFFF;
+
+        background: rgba(255, 255, 255, 0.42);
+        border: 1.56px solid #FFFFFF;
+        border-radius: 50%;
+        transition-duration: .5s;
+        &:hover,
+        &:focus {
+            background: #2b5dffb2; 
+        }
+        &:active {
+            opacity: .8;
+        }
+        &:nth-child(1) {
+            left: 10%;
+            top:40%;
+
+        }
+        &:nth-child(2) {
+            right: 18%;
+            top:6%
+        }
+        &:nth-child(3) {
+            right: 20%;
+            bottom: 2%;
+    
+        }
+    }
+}
+
+@media (min-width: $screen-table) {
+    .whom {
+        &__wrapper{
+            flex-direction: row;
+            padding: 80px 50px;
+        }
+        &__block-one {
+            flex-basis: 40%;
+        }
+        &__block-two {
+            margin: 0;
+            flex-basis: 60%;
+        }
+    }
+}
+
+@media (min-width: $screen-desktop) {
+    .whom {
+        &__wrapper{
+            flex-direction: row;
+            padding: 90px 70px;
+        }
+    }
+
+    .block-one {
+        margin-top: 60px;
+        padding-right: 20px;
+        &__title {
+            font-size: 54px;
+            margin-bottom: 38px;
+        }
+        &__text {
+            font-size: 28px;
+            margin-bottom: 46px;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.tariff {
+    background: linear-gradient(119.83deg, #0000C8 1.42%, #000068 90.31%);
+    &__wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 40px 15px;
+    }
+    &__title {
+        margin-bottom: 40px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 105%;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+    }
+
+}
+
+.tariff-block {
+    margin-bottom: 53px;
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__title {
+        margin-bottom: 18px;
+        font-weight: 700;
+        font-size: 33.75px;
+        line-height: 105%;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+    }
+    &__price {
+        margin-bottom: 23px;
+        font-weight: 400;
+        font-size: 21.0938px;
+        line-height: 105%;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        span {
+            font-weight: 700;
+        }
+    }
+    &__btn {
+        margin-bottom: 60px;
+    }
+    &__list {
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 22px;
+        height: 69px;
+        margin-bottom: 10px;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 105%;
+        /* identical to box height, or 17px */
+        
+        letter-spacing: 0.02em;
+
+        &:nth-child(odd) {
+            color: #000000;
+
+            background: rgba(255, 255, 255, 0.91);
+            border-radius: 8px;
+
+        }
+        &:nth-child(even) {
+            color: #FFFFFF;
+        }
+        &:nth-child(3) {
+            .tariff-block__text {
+                padding-right: 0;
+            }
+            .tariff-block__icon {
+                text-align: center;
+                margin-right: 5px;
+            }
+        }
+    }
+    &__text {
+        padding-right: 20px;
+    }
+    &__icon {
+        color: #4CD964;
+        margin-right: 43px;
+    }
+}
+
+.icon-close {
+    color: #D24B6C;
+}

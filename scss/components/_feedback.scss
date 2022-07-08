@@ -1,0 +1,95 @@
+.feedback {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 70px 15px;
+    background-image: url("../images/svg/bg02.svg");
+    background-repeat: no-repeat;
+    background-position: -380px -174px;
+    &__title {
+        margin-bottom: 53px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 105%;
+        letter-spacing: 0.02em;
+
+        color: #000000;
+    }
+    &__text {
+        margin-bottom: 18px;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 160%;
+        /* or 35px */
+
+        letter-spacing: 0.05em;
+
+        color: #0B1331;
+    }
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    &__label {
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    &__text {
+        margin-bottom: 4px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0.05em;
+    }
+    &__elem {
+        color: #D24B6C;
+    }
+    &__input {
+        padding: 10px 25px;
+        background: rgba(255, 255, 255, 0);
+        border: 1px solid #000000;
+        border-radius: 8px;
+    }
+    &__textarea {
+        margin-bottom: 30px;
+        height: 97px;
+        padding: 10px 25px;
+        border: 1px solid #000000;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0);
+    }
+    &__btn {
+    }
+}
+
+
+@media (min-width: $screen-table) {
+    .feedback {
+        padding: 80px 50px;
+        &__title {
+            font-size: 48px;
+            margin-bottom: 23px;
+        }
+        &__text {
+            font-size: 22px;
+            margin-bottom: 43px;
+        }
+    }
+}
+
+@media (min-width: $screen-desktop) {
+    .feedback {
+        background-image: url("../images/svg/bg02.svg"), url("../images/svg/component.svg");
+        background-repeat: no-repeat, no-repeat;
+        background-position: 3px -29px, 610px 309px;
+        padding: 300px 70px;
+        &__title {
+            font-size: 54px;
+        }
+        &__text {
+            font-size: 28px;
+        }
+    }
+
+}

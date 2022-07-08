@@ -1,0 +1,293 @@
+.header {
+    position: absolute;
+    width: 100%;
+    &__wrap {
+        display: flex;
+        align-items: center;
+        max-width: 1440px;
+        margin: 0 auto;
+        margin-top: 45px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    &__login {
+        display: none;
+    }
+    &__menu-btn {
+        z-index: 10;
+    }
+    &__logo {
+        z-index: 10;
+    }
+}
+
+.menu-btn {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 10px;
+    width: 75px;
+    margin-left: auto;
+    
+    &:hover &__elem,
+    &:focus &__elem  {
+        background: #2b5dff;
+    }
+    &:active &__elem{
+        opacity: .8;
+    }
+    &__elem {
+        display: inline-block;
+        height: 2px;
+        width: 55px;
+        background-color: #fff;
+        &:first-child {margin-left: auto; }
+        &:last-child {margin-right: auto;}
+        transition-duration: .5s;
+    }
+    &--active {
+        .menu-btn__elem {
+            position: absolute;
+            left: 16px;
+        }
+        .menu-btn__elem:first-child {
+            transform: rotate(45deg);
+    
+        }
+        .menu-btn__elem:last-child {
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+.hero {
+    background: url("../images/svg/bg.svg") -300px -35px no-repeat, linear-gradient(119.83deg, #0000C8 1.42%, #000068 90.31%);
+    height: 100vh;
+    width: 100%;
+    padding: 22px 15px 35px;
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+        height: 100%;
+        border: 2px solid #FFFFFF;
+        border-radius: 20px;
+    }
+    &__title {
+        max-width: 474px;
+        margin-bottom: 29px;
+        font-weight: 300;
+        font-size: 58px;
+        line-height: 89%;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+    }
+    &__text {
+        max-width: 655px;
+        margin-bottom: 29px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 145%;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+    }
+    &__btn {
+        margin-bottom: 100px;
+    }
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 64px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 105%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 8px;
+    transition-duration: .5s;
+    &:hover,
+    &:focus {
+        background: #FFFFFF;
+        color: #3657C8;
+    }
+    &:active {
+        opacity: .8;
+    }
+    &--blue {
+        background-color: #3657C8;
+        color: #fff;
+        &:hover,
+        &:focus {
+            background: #ffffff00;
+            color: #3657C8;
+            border: 1px solid #3657C8;
+        }
+        &:active {
+            opacity: .8;
+        }
+    }
+} 
+
+.menu {
+    position: absolute;
+    background: linear-gradient(119.83deg, #0000C8 1.42%, #000068 90.31%);
+    top: 0;
+    left: -900px;
+    width: 100%;
+    height: 100vh;
+    padding: 132px 15px 15px;
+    transition-duration: .5s; 
+    &--active {
+        left: 0;
+    }
+    &__item {
+        &:first-child {
+            a {
+                border-top: 2px solid #FFFFFF;
+                border-radius: 13px 13px 0px 0px;
+            }
+        }
+        &:last-child {
+            a {
+                border-radius: 0px 0px 13px 13px;
+            }
+        }
+    }
+    &__link {
+        display: flex;
+        justify-content: space-between;
+        padding: 26px 45px;
+        font-weight: 300;
+        font-size: 26.6493px;
+        line-height: 145%;
+        letter-spacing: 0.02em;
+
+        color: #FFFFFF;
+        border-bottom: 2px solid #FFFFFF;
+        border-left: 2px solid #FFFFFF;
+        border-right: 2px solid #FFFFFF;
+        transition-duration: .5s;
+        &:hover,
+        &:focus {
+            font-weight: 700;
+        }
+        &:active {
+            opacity: .8;
+        }
+    }
+    i {
+        color: #FFFFFF;
+    }
+}
+
+.login {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 105%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    z-index: 10;
+    transition-duration: .5s;
+    &:hover,
+    &:focus {
+        color: #3657C8; 
+    }
+    &:active {
+        opacity: .8;
+    }
+}
+
+
+
+@media (min-width: $screen-table) {
+    .header {
+        position: absolute;
+        width: 100%;
+        &__wrap {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        &__login {
+            display: inline-block;
+            margin-left: auto;
+            margin-bottom: 5px;
+        }
+        &__menu-btn {
+            display: none;
+        }
+    }
+
+    .hero {
+        background: url("../images/svg/bg.svg") -412px -143px no-repeat , linear-gradient(119.83deg, #0000C8 1.42%, #000068 90.31%);
+        background-size: 160vh, 100%;
+        &__wrap {
+            position: relative;
+            padding-left: 20px;
+        }
+        &__btn {
+            margin-bottom: 300px;
+        }
+    }
+    .menu {
+        position: absolute;
+        background: #ffffff00;
+        left: auto;
+        top:auto;
+        bottom: 50px;
+        right: 50px;
+
+        width: 205px;
+        height: auto;
+        padding: 0;
+        &--active {
+            bottom: 50px;
+            right: 40px;
+        }
+        &__item {
+            &:nth-child(5) {
+                a {
+                    border-radius: 0px 0px 13px 13px;
+                }
+            }
+            &:last-child {
+                a {
+                    display: none;
+                }
+            }
+        }
+        &__link {
+            padding: 16px 18px;
+            font-size: 16px;
+        }
+    }
+
+}
+
+@media (min-width: $screen-desktop) {
+    .hero {
+        &__title {
+            max-width: 753px;
+            font-size: 92px;
+        }
+        &__text {
+            max-width: 761px;
+            font-size: 28px;
+        }
+        background: url("../images/svg/bg.svg") -412px -143px no-repeat , linear-gradient(119.83deg, #0000C8 1.42%, #000068 90.31%);
+        background-size: 160vh, 100%;
+        &__wrap {
+            position: relative;
+        }
+    }
+}
