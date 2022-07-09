@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?6jaaz4');
-  src:  url('../fonts/icomoon.woff?6jaaz4') format('woff');
+  src:  url('../fonts/icomoon.eot?x3k9tu');
+  src:  url('../fonts/icomoon.woff?x3k9tu') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -22,6 +22,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-close02:before {
+  content: "\e903";
+}
 .icon-arrow:before {
   content: "\e900";
 }
