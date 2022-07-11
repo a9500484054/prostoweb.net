@@ -56,15 +56,33 @@
             padding: 10px;
         }
     }
+    &__btn {
+        position: absolute;
+        right: 20px;
+        top:20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 36px;
+        height: 36px;
+        margin-bottom: 30px;
+        border: 1px solid #FFFFFF;
+        border-radius: 50%;
+        i {
+            color: #FFFFFF;
+        }
+    }
 }
-
+.popup-code--active,
 .popup-user--active {
     top:10%;
     left: 0;
 }
 
+
 @media (min-width: $screen-table) {
-    .popup {
+    .popup-code--active,
+    .popup-user--active {
         left:50%;
         transform: translate(-50%);
     }

@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const enter = document.querySelectorAll('.enter');
+    const popupBtnClose = document.querySelectorAll('.popup__btn');
     const popup = document.querySelector('.popup-user');
 
     enter.forEach((el) => {
@@ -67,5 +68,11 @@ document.addEventListener('DOMContentLoaded', () => {
             popup.classList.add('popup-user--active')
         });
     });
+    popupBtnClose.forEach((el) => {
+        el.addEventListener('click', (e) => {
+            popup.classList.remove('popup-user--active')
+        });
+    });
+
 });
 

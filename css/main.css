@@ -2020,13 +2020,39 @@ input[type="radio"].visually-hidden {
   padding: 10px;
 }
 
+.popup__btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 30px;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+}
+
+.popup__btn i {
+  color: #FFFFFF;
+}
+
+.popup-code--active,
 .popup-user--active {
   top: 10%;
   left: 0;
 }
 
 @media (min-width: 768px) {
-  .popup {
+  .popup-code--active,
+  .popup-user--active {
     left: 50%;
     -webkit-transform: translate(-50%);
             transform: translate(-50%);
