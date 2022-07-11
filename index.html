@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/um-icon-style.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="ccs/main.css">
 </head>
 <body>
     <header class="header">
@@ -24,33 +24,33 @@
             </button>
 
 
-            <button class="header__login login">Войти</button>
+            <button class="header__login login enter">Войти</button>
         </div>
     </header>
 
-    <main>
+    <main>  
 
         <section class="hero">
             <div class="hero__wrap">
                 <h1 class="hero__title">Создать свой сайт – это легко!</h1>
                 <p class="hero__text">Создай сам свой сайт на нашем конcтрукторе за пару кликов и получай заявки клиентов прямо сегодня</p>
-                <button class="hero__btn btn">Создать сайт</button>
+                <button class="hero__btn btn enter">Создать сайт</button>
             
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__item"><a class="menu__link" href="#">Возможности<i class="icon-arrow"></i></a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Кому<i class="icon-arrow"></i></a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Как начать<i class="icon-arrow"></i></a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Преимущества<i class="icon-arrow"></i></a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Тарифы<i class="icon-arrow"></i></a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Войти<i class="icon-arrow"></i></a></li>
+                        <li class="menu__item"><a class="menu__link" href="#whom">Кому<i class="icon-arrow"></i></a></li>
+                        <li class="menu__item"><a class="menu__link" href="#start">Как начать<i class="icon-arrow"></i></a></li>
+                        <li class="menu__item"><a class="menu__link" href="#benefits">Преимущества<i class="icon-arrow"></i></a></li>
+                        <li class="menu__item"><a class="menu__link" href="#tariff">Тарифы<i class="icon-arrow"></i></a></li>
+                        <li class="menu__item"><a class="menu__link enter" href="#feedback">Войти<i class="icon-arrow"></i></a></li>
                     </ul>
                 </nav>
             </div>
 
         </section>
 
-        <section class="features">
+        <section class="features" id="features">
             <h2 class="features__title">Ваши возмножности с</h2>
 
             <ul class="features__list">
@@ -60,31 +60,31 @@
                         <p class="features-block__text">Загружай товары, устанавливай цены и скидки самостоятельно</p>
                     </div>
                 </li>
-                <li class="features__item features-block">
+                <li class="features__item features-block animate__faster">
                     <div class="features-block__wrap">
                         <h3 class="features-block__title">Аналитика</h3>
                         <p class="features-block__text">Следи в личном кабинете за статистикой заказов</p>
                     </div>
                 </li>
-                <li class="features__item features-block">
+                <li class="features__item features-block animate__faster">
                     <div class="features-block__wrap">
                         <h3 class="features-block__title">Отсутствие ограничения по количеству товаров</h3>
                         <p class="features-block__text">Загружай любое количество товаров без ограничений</p>
                     </div>
                 </li>
-                <li class="features__item features-block">
+                <li class="features__item features-block animate__faster">
                     <div class="features-block__wrap">
                         <h3 class="features-block__title">Программа лояльности</h3>
                         <p class="features-block__text">Дари своим клиентам промокоды со скидкой, устраивай акции на товары, начисляй бонусы за покупку</p>
                     </div>
                 </li>
-                <li class="features__item features-block">
+                <li class="features__item features-block animate__faster">
                     <div class="features-block__wrap">
                         <h3 class="features-block__title">Реферальная программа</h3>
                         <p class="features-block__text">Подключай продавцов к своему сайту, система автоматически начислит им комиссию с продажи, которую ты сам установишь</p>
                     </div>
                 </li>
-                <li class="features__item features-block">
+                <li class="features__item features-block animate__faster">
                     <div class="features-block__wrap">
                         <h3 class="features-block__title">Вывод средств 24/7</h3>
                         <p class="features-block__text">За каждую покупку на сайте средства будут начислены на твой кошелек в личном кабинете, ты можешь выводить их в любое удобное время время</p>
@@ -93,12 +93,12 @@
             </ul>
         </section>
 
-        <section class="whom">
+        <section class="whom" id="whom">
             <div class="whom__wrapper">
                 <div class="whom__block-one block-one">
                     <h2 class="block-one__title">Кому подойдет</h2>
                     <p class="block-one__text">Конструктор prostoweb.net подойдет любому желающему, мы выделили основные группы бизнеса, для кого будет актуально наше предложение.</p>
-                    <button class="btn">Создать сайт</button>
+                    <button class="btn enter">Создать сайт</button>
                 </div>
                 <div class="whom__block-two block-two">
                     <button class="block-two__btn" data-tabs-path="tabs-one">1</button>
@@ -152,27 +152,27 @@
             </div>
         </section>
 
-        <section class="start">
+        <section class="start" id="start">
             <h2 class="start__title">Как начать</h2>
 
             <div class="start__wrapper">
                 <ul class="start__list-text list-text">
-                    <li class="list-text__item">Зарегистрируйся на сайте</li>
-                    <li class="list-text__item">Попробуй бесплатный тестовый режим 7 дней</li>
-                    <li class="list-text__item">Выбери тип сайта</li>
-                    <li class="list-text__item">Заполни информацию в своем бизнесе</li>
-                    <li class="list-text__item">Выбери готовый шаблон сайта</li>
-                    <li class="list-text__item">Самостоятельно загружай товары или услуги и уснавливай на них цену</li>
-                    <li class="list-text__item">Твой личный сайт готов!</li>
+                    <li class="list-text__item list-text__item--active" data-tabs-target="start-one">Зарегистрируйся на сайте</li>
+                    <li class="list-text__item" data-tabs-target="start-two">Попробуй бесплатный тестовый режим 7 дней</li>
+                    <li class="list-text__item" data-tabs-target="start-three">Выбери тип сайта</li>
+                    <li class="list-text__item" data-tabs-target="start-four">Заполни информацию в своем бизнесе</li>
+                    <li class="list-text__item" data-tabs-target="start-five">Выбери готовый шаблон сайта</li>
+                    <li class="list-text__item" data-tabs-target="start-six">Самостоятельно загружай товары или услуги</li>
+                    <li class="list-text__item" data-tabs-target="start-seven">Твой личный сайт готов!</li>
                 </ul>
                 <ul class="list-elem">
-                    <li class="list-elem__item"><span class="list-elem__elem"></span></li>
-                    <li class="list-elem__item"><span class="list-elem__elem"></span></li>
-                    <li class="list-elem__item"><span class="list-elem__elem"></span></li>
-                    <li class="list-elem__item"><span class="list-elem__elem"></span></li>
-                    <li class="list-elem__item"><span class="list-elem__elem"></span></li>
-                    <li class="list-elem__item"><span class="list-elem__elem"></span></li>
-                    <li class="list-elem__item"><span class="list-elem__elem"></span></li>
+                    <li class="list-elem__item" data-tabs-path="start-one"><span class="list-elem__elem"></span></li>
+                    <li class="list-elem__item" data-tabs-path="start-two"><span class="list-elem__elem"></span></li>
+                    <li class="list-elem__item" data-tabs-path="start-three"><span class="list-elem__elem"></span></li>
+                    <li class="list-elem__item" data-tabs-path="start-four"><span class="list-elem__elem"></span></li>
+                    <li class="list-elem__item" data-tabs-path="start-five"><span class="list-elem__elem"></span></li>
+                    <li class="list-elem__item" data-tabs-path="start-six"><span class="list-elem__elem"></span></li>
+                    <li class="list-elem__item" data-tabs-path="start-seven"><span class="list-elem__elem"></span></li>
                 </ul>
             </div>
 
@@ -183,7 +183,7 @@
 
         </section>
 
-        <section class="benefits">
+        <section class="benefits" id="benefits">
             <h2 class="benefits__title">Преимущества работы с</h2>
             <ul class="benefits__list">
                 <li class="benefits__item">Отсутствие посредников и комиссии</li>
@@ -194,14 +194,14 @@
             </ul>
         </section>
 
-        <section class="tariff">
+        <section class="tariff" id="tariff">
             <div class="tariff__wrapper">
                 <h2 class="tariff__title">Тарифы</h2>
                 <div class="tariff-block">
                     <div class="tariff-block__wrap">
                         <h3 class="tariff-block__title">Basic</h3>
                         <div class="tariff-block__price"><span>499₽</span> / месяц или <span>4200₽</span> / год</div>
-                        <button class="tariff-block__btn btn">Создать сайт</button>
+                        <button class="tariff-block__btn btn enter">Создать сайт</button>
                     </div>
                     <ul class="tariff-block__list">
                         <li class="tariff-block__item"><span class="tariff-block__text">Тестовый период 7 дней</span><span class="tariff-block__icon"><i class="icon-ok"></i></span></li>
@@ -223,7 +223,7 @@
                     <div class="tariff-block__wrap">
                         <h3 class="tariff-block__title">Premium</h3>
                         <div class="tariff-block__price"><span>999₽</span> / месяц или <span>8400₽</span> / год</div>
-                        <button class="tariff-block__btn btn">Создать сайт</button>
+                        <button class="tariff-block__btn btn enter">Создать сайт</button>
                     </div>
                     <ul class="tariff-block__list">
                         <li class="tariff-block__item"><span class="tariff-block__text">Тестовый период 7 дней</span><span class="tariff-block__icon"><i class="icon-ok"></i></span></li>
@@ -246,12 +246,12 @@
                         <div class="tariff-block__wrap">
                             <h3 class="tariff-block__title">Basic</h3>
                             <div class="tariff-block__price"><span>499₽</span> / месяц или <span>4200₽</span> / год</div>
-                            <button class="tariff-block__btn btn">Создать сайт</button>
+                            <button class="tariff-block__btn btn enter">Создать сайт</button>
                         </div>
                         <div class="tariff-block__wrap">
                             <h3 class="tariff-block__title">Premium</h3>
                             <div class="tariff-block__price"><span>999₽</span> / месяц или <span>8400₽</span> / год</div>
-                            <button class="tariff-block__btn btn">Создать сайт</button>
+                            <button class="tariff-block__btn btn enter">Создать сайт</button>
                         </div>
                     </div>
                     <ul class="tariff-block__list">
@@ -325,7 +325,7 @@
             </div>
         </section>
 
-        <section class="feedback">
+        <section class="feedback" id="feedback">
             <h2 class="feedback__title">Остались вопросы?</h2>
             <p class="feedback__text">Напиши нам, мы обязательно ответим</p>
 
@@ -367,6 +367,34 @@
             </div>
         </div>
     </footer>
+
+    <section class="popup popup-user" id="popupUser">
+        <h2 class="popup__title">Войти или зарегистрироваться</h2>
+        <p class="popup__text">На указанный номер телефона поступит телефонный звонок, необходимо будет ввести 4 последние цифры номера с которого был звонок</p>
+
+        <form class="popup__form" action="#">
+            <label class="popup__label">
+                <span class="popup__span">Имя <span class="popup__elem">*</span></span>
+                <input class="popup__input" type="text" placeholder="+79999999999">
+            </label>
+            <button class="btn btn--blue" type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <section class="popup" id="popupCode">
+        <h2 class="popup__title">Войти или зарегистрироваться</h2>
+        <p class="popup__text">Введите 4 последние цифры номера с которого был звонок</p>
+
+        <form class="popup__form" action="#">
+            <label class="popup__label popup__label--row">
+                <input class="popup__input popup__input--number" type="text" >
+                <input class="popup__input popup__input--number" type="text" >
+                <input class="popup__input popup__input--number" type="text" >
+                <input class="popup__input popup__input--number" type="text" >
+            </label>
+            <button class="btn btn--blue" type="submit">Отправить</button>
+        </form>
+    </section>
 
     <script src="js/app.js"></script>
 </body>

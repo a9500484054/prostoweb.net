@@ -127,9 +127,10 @@
     &--blue {
         background-color: #3657C8;
         color: #fff;
+        border: none;
         &:hover,
         &:focus {
-            background: #ffffff00;
+            background: #ffffff;
             color: #3657C8;
             border: 1px solid #3657C8;
         }

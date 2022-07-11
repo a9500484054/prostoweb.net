@@ -632,10 +632,11 @@ input[type="radio"].visually-hidden {
 .btn--blue {
   background-color: #3657C8;
   color: #fff;
+  border: none;
 }
 
 .btn--blue:hover, .btn--blue:focus {
-  background: #ffffff00;
+  background: #ffffff;
   color: #3657C8;
   border: 1px solid #3657C8;
 }
@@ -1248,7 +1249,7 @@ input[type="radio"].visually-hidden {
     padding-right: 100px;
   }
   .block-three--active {
-    left: -700px;
+    left: -55%;
   }
 }
 
@@ -1334,7 +1335,7 @@ input[type="radio"].visually-hidden {
   opacity: 0;
 }
 
-.list-text__item:first-child {
+.list-text__item--active {
   opacity: 1;
 }
 
@@ -1940,6 +1941,95 @@ input[type="radio"].visually-hidden {
 @media (min-width: 1280px) {
   .footer__wrapper {
     padding: 40px 70px 28px;
+  }
+}
+
+.popup {
+  position: fixed;
+  top: -900px;
+  background: linear-gradient(241.63deg, #6070FF 0%, #0A0A11 100%);
+  max-width: 512px;
+  border-radius: 40px;
+  padding: 40px 20px;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+.popup__title {
+  margin-bottom: 23px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 160%;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
+.popup__text {
+  margin-bottom: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+.popup__label {
+  margin-bottom: 43px;
+  max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.popup__label--row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.popup__span {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
+.popup__elem {
+  color: #D24B6C;
+}
+
+.popup__input {
+  padding: 10px 25px;
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  color: #FFFFFF;
+}
+
+.popup__input--number {
+  max-width: 41px;
+  height: 46px;
+  margin-right: 12px;
+  padding: 10px;
+}
+
+.popup-user--active {
+  top: 10%;
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  .popup {
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
   }
 }
 /*# sourceMappingURL=main.css.map */
