@@ -97,6 +97,22 @@
     color: #D24B6C;
 }
 
+.tariff-block:nth-child(2) {
+    position: relative;
+    margin-bottom: 160px;
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -100px;
+        left: -15px;
+        display: block;
+        width: calc(100% + 30px);
+        height: 40px;
+
+        background-color: #fff;
+
+    }
+}
 
 @media (min-width: $screen-table) {
     .tariff{

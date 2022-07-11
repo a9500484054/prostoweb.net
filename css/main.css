@@ -838,10 +838,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 20px;
 }
 
-.features__item:nth-child(odd) {
-  margin-right: 20px;
-}
-
 .features-block {
   position: relative;
   display: -webkit-box;
@@ -928,7 +924,7 @@ input[type="radio"].visually-hidden {
   background-position: 0 0, 0 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
   .features {
     padding: 0;
     padding-top: 100px;
@@ -948,6 +944,9 @@ input[type="radio"].visually-hidden {
   .features__list {
     max-width: 800px;
     margin: 0 auto;
+  }
+  .features__item:nth-child(odd) {
+    margin-right: 20px;
   }
 }
 
@@ -1143,7 +1142,7 @@ input[type="radio"].visually-hidden {
 .block-three {
   position: absolute;
   top: 0;
-  left: -1900px;
+  left: -3900px;
   width: 100%;
   height: 100%;
   padding: 56px 30px;
@@ -1476,7 +1475,7 @@ input[type="radio"].visually-hidden {
   width: 340px;
   height: 100px;
   padding-left: 115px;
-  margin-bottom: 63px;
+  margin-bottom: 25px;
   font-weight: 700;
   font-size: 22px;
   line-height: 120%;
@@ -1565,6 +1564,9 @@ input[type="radio"].visually-hidden {
     left: 40px;
     width: 397px;
     height: 50px;
+  }
+  .benefits__item:nth-child(1), .benefits__item:nth-child(2), .benefits__item:nth-child(4) {
+    margin-right: 5%;
   }
 }
 
@@ -1687,6 +1689,22 @@ input[type="radio"].visually-hidden {
 
 .icon-close {
   color: #D24B6C;
+}
+
+.tariff-block:nth-child(2) {
+  position: relative;
+  margin-bottom: 160px;
+}
+
+.tariff-block:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  left: -15px;
+  display: block;
+  width: calc(100% + 30px);
+  height: 40px;
+  background-color: #fff;
 }
 
 @media (min-width: 768px) {

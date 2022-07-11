@@ -61,18 +61,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const enter = document.querySelectorAll('.enter');
     const popupBtnClose = document.querySelectorAll('.popup__btn');
-    const popup = document.querySelector('.popup-user');
+    const popupUser = document.querySelector('.popup-user');
+    const popupCode = document.querySelector('.popup-code');
+    const popupUserForm = document.querySelector('.popup__user-form');
+    const popupCodeForm = document.querySelector('.popup__code-form');
+
 
     enter.forEach((el) => {
         el.addEventListener('click', (e) => {
-            popup.classList.add('popup-user--active')
+            popupUser.classList.add('popup-user--active')
         });
     });
     popupBtnClose.forEach((el) => {
         el.addEventListener('click', (e) => {
-            popup.classList.remove('popup-user--active')
+            popupUser.classList.remove('popup-user--active')
+            popupCode.classList.remove('popup-code--active')
+
         });
     });
 
+    popupUserForm.addEventListener('submit', () => {
+        popupUser.classList.remove('popup-user--active')
+        popupCode.classList.add('popup-code--active')
+
+    });
+
+    popupCodeForm.addEventListener('submit', () => {
+        popupCode.classList.remove('popup-code--active')
+    });
 });
 
+$('a[href^="#"]').click(function(){ // #1
+    let anchor = $(this).attr('href');  // #2
+    $('html, body').animate({           // #3
+    scrollTop:  $(anchor).offset().top  // #4
+    }, 600);                            // #5
+});

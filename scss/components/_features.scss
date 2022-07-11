@@ -35,9 +35,7 @@
     &__item {
         margin-bottom: 20px;
     }
-    &__item:nth-child(odd) {
-        margin-right: 20px;
-    }
+
 
 }
 
@@ -111,7 +109,7 @@
 }
 
 
-@media (min-width: $screen-table) {
+@media (min-width: 720px) {
     .features {
         padding: 0;
         padding-top: 100px;
@@ -130,6 +128,9 @@
         &__list { 
             max-width: 800px;
             margin: 0 auto;
+        }
+        &__item:nth-child(odd) {
+            margin-right: 20px;
         }
     }
 }
