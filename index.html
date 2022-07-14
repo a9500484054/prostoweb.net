@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/um-icon-style.css">
-    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <header class="header">
@@ -25,7 +26,7 @@
             </button>
 
 
-            <button class="header__login login enter wow fadeIn">Войти</button>
+            <a href="user.html" class="header__login login wow fadeIn">Войти</a>
         </div>
     </header>
 
@@ -35,7 +36,7 @@
             <div class="hero__wrap">
                 <h1 class="hero__title wow fadeIn">Создать свой сайт – это легко!</h1>
                 <p class="hero__text wow fadeIn">Создай сам свой сайт на нашем конcтрукторе за пару кликов и получай заявки клиентов прямо сегодня</p>
-                <button class="hero__btn btn enter wow fadeIn">Создать сайт</button>
+                <button class="hero__btn btn wow fadeIn">Создать сайт</button>
             
                 <nav class="menu">
                     <ul class="menu__list">
@@ -44,36 +45,36 @@
                         <li class="menu__item"><a class="menu__link wow fadeIn" href="#start">Как начать<i class="icon-arrow"></i></a></li>
                         <li class="menu__item"><a class="menu__link wow fadeIn" href="#benefits">Преимущества<i class="icon-arrow"></i></a></li>
                         <li class="menu__item"><a class="menu__link wow fadeIn" href="#tariff">Тарифы<i class="icon-arrow"></i></a></li>
-                        <li class="menu__item"><a class="menu__link wow fadeIn enter" href="#">Войти<i class="icon-arrow"></i></a></li>
+                        <li class="menu__item"><a class="menu__link wow fadeIn" href="user.html">Войти<i class="icon-arrow"></i></a></li>
                     </ul>
                 </nav>
             </div>
 
         </section>
 
-        <section class="features" id="features">
+        <section class="features" id="features" >
             <h2 class="features__title wow fadeIn">Ваши возмножности с</h2>
 
             <ul class="features__list">
-                <li class="features__item features-block wow fadeIn">
+                <li class="features__item features-block wow fadeIn" data-enllax-ratio=".1" data-enllax-type="foreground">
                     <div class="features-block__wrap">
                         <h3 class="features-block__title  wow fadeIn">Каталог товаров</h3>
                         <p class="features-block__text  wow fadeIn">Загружай товары, устанавливай цены и скидки самостоятельно</p>
                     </div>
                 </li>
-                <li class="features__item features-block wow fadeIn">
+                <li class="features__item features-block wow fadeIn" >
                     <div class="features-block__wrap">
                         <h3 class="features-block__title">Аналитика</h3>
                         <p class="features-block__text">Следи в личном кабинете за статистикой заказов</p>
                     </div>
                 </li>
-                <li class="features__item features-block wow fadeIn">
+                <li class="features__item features-block wow fadeIn" data-enllax-ratio=".1" data-enllax-type="foreground">
                     <div class="features-block__wrap">
                         <h3 class="features-block__title">Отсутствие ограничения по количеству товаров</h3>
                         <p class="features-block__text">Загружай любое количество товаров без ограничений</p>
                     </div>
                 </li>
-                <li class="features__item features-block wow fadeIn">
+                <li class="features__item features-block wow fadeIn" data-enllax-ratio=".1" data-enllax-type="foreground">
                     <div class="features-block__wrap">
                         <h3 class="features-block__title">Программа лояльности</h3>
                         <p class="features-block__text">Дари своим клиентам промокоды со скидкой, устраивай акции на товары, начисляй бонусы за покупку</p>
@@ -85,7 +86,7 @@
                         <p class="features-block__text">Подключай продавцов к своему сайту, система автоматически начислит им комиссию с продажи, которую ты сам установишь</p>
                     </div>
                 </li>
-                <li class="features__item features-block wow fadeIn">
+                <li class="features__item features-block wow fadeIn" data-enllax-ratio=".1" data-enllax-type="foreground">
                     <div class="features-block__wrap">
                         <h3 class="features-block__title">Вывод средств 24/7</h3>
                         <p class="features-block__text">За каждую покупку на сайте средства будут начислены на твой кошелек в личном кабинете, ты можешь выводить их в любое удобное время время</p>
@@ -98,8 +99,8 @@
             <div class="whom__wrapper">
                 <div class="whom__block-one block-one">
                     <h2 class="block-one__title wow fadeIn">Кому подойдет</h2>
-                    <p class="block-one__text wow fadeIn">Конструктор prostoweb.net подойдет любому желающему, мы выделили основные группы бизнеса, для кого будет актуально наше предложение.</p>
-                    <button class="btn enter wow fadeIn">Создать сайт</button>
+                    <p class="block-one__text wow fadeIn">Конструктор Spasiko подойдет любому желающему, мы выделили основные группы бизнеса, для кого будет актуально наше предложение.</p>
+                    <button class="btn wow fadeIn">Создать сайт</button>
                 </div>
                 <div class="whom__block-two block-two wow fadeIn">
                     <button class="block-two__btn wow fadeIn" data-tabs-path="tabs-one">1</button>
@@ -158,22 +159,22 @@
 
             <div class="start__wrapper">
                 <ul class="start__list-text list-text">
-                    <li class="list-text__item list-text__item--active wow fadeIn" data-tabs-target="start-one">Зарегистрируйся на сайте</li>
-                    <li class="list-text__item" data-tabs-target="start-two">Попробуй бесплатный тестовый режим 7 дней</li>
-                    <li class="list-text__item" data-tabs-target="start-three">Выбери тип сайта</li>
-                    <li class="list-text__item" data-tabs-target="start-four">Заполни информацию в своем бизнесе</li>
-                    <li class="list-text__item" data-tabs-target="start-five">Выбери готовый шаблон сайта</li>
-                    <li class="list-text__item" data-tabs-target="start-six">Самостоятельно загружай товары или услуги</li>
-                    <li class="list-text__item" data-tabs-target="start-seven">Твой личный сайт готов!</li>
+                    <li class="list-text__item wow fadeIn"  data-wow-delay="1s" data-tabs-target="start-one">Зарегистрируйся на сайте</li>
+                    <li class="list-text__item wow fadeIn"  data-wow-delay="2.5s" data-tabs-target="start-two">Попробуй бесплатный тестовый режим 7 дней</li>
+                    <li class="list-text__item wow fadeIn"  data-wow-delay="4s" data-tabs-target="start-three">Выбери тип сайта</li>
+                    <li class="list-text__item wow fadeIn"  data-wow-delay="5.5s" data-tabs-target="start-four">Заполни информацию в своем бизнесе</li>
+                    <li class="list-text__item wow fadeIn"  data-wow-delay="7s" data-tabs-target="start-five">Выбери готовый шаблон сайта</li>
+                    <li class="list-text__item wow fadeIn"  data-wow-delay="8.5s" data-tabs-target="start-six">Самостоятельно загружай товары или услуги</li>
+                    <li class="list-text__item wow fadeIn"  data-wow-delay="10s" data-tabs-target="start-seven">Твой личный сайт готов!</li>
                 </ul>
                 <ul class="list-elem">
-                    <li class="list-elem__item wow fadeIn" data-wow-delay=".5s" data-tabs-path="start-one"><span class="list-elem__elem"></span></li>
-                    <li class="list-elem__item wow fadeIn" data-wow-delay="1s" data-tabs-path="start-two"><span class="list-elem__elem"></span></li>
-                    <li class="list-elem__item wow fadeIn" data-wow-delay="1.5s" data-tabs-path="start-three"><span class="list-elem__elem"></span></li>
-                    <li class="list-elem__item wow fadeIn" data-wow-delay="2s" data-tabs-path="start-four"><span class="list-elem__elem"></span></li>
-                    <li class="list-elem__item wow fadeIn" data-wow-delay="2.5s" data-tabs-path="start-five"><span class="list-elem__elem"></span></li>
-                    <li class="list-elem__item wow fadeIn" data-wow-delay="3s" data-tabs-path="start-six"><span class="list-elem__elem"></span></li>
-                    <li class="list-elem__item wow fadeIn" data-wow-delay="3.5s" data-tabs-path="start-seven"><span class="list-elem__elem"></span></li>
+                    <li class="list-elem__item wow fadeIn" data-wow-delay="1s" data-tabs-path="start-one"><span class="list-elem__elem"></span></li>
+                    <li class="list-elem__item wow fadeIn" data-wow-delay="2.5s" data-tabs-path="start-two"><span class="list-elem__elem"></span></li>
+                    <li class="list-elem__item wow fadeIn" data-wow-delay="4s" data-tabs-path="start-three"><span class="list-elem__elem"></span></li>
+                    <li class="list-elem__item wow fadeIn" data-wow-delay="5.5s" data-tabs-path="start-four"><span class="list-elem__elem"></span></li>
+                    <li class="list-elem__item wow fadeIn" data-wow-delay="7s" data-tabs-path="start-five"><span class="list-elem__elem"></span></li>
+                    <li class="list-elem__item wow fadeIn" data-wow-delay="8.5s" data-tabs-path="start-six"><span class="list-elem__elem"></span></li>
+                    <li class="list-elem__item wow fadeIn" data-wow-delay="10s" data-tabs-path="start-seven"><i class="list-elem__elem-ok icon-ok"></i> </li>
                 </ul>
             </div>
 
@@ -202,7 +203,7 @@
                     <div class="tariff-block__wrap">
                         <h3 class="tariff-block__title wow fadeIn">Basic</h3>
                         <div class="tariff-block__price wow fadeIn"><span>499₽</span> / месяц или <span>4200₽</span> / год</div>
-                        <button class="tariff-block__btn btn enter wow fadeIn">Создать сайт</button>
+                        <button class="tariff-block__btn btn wow fadeIn">Создать сайт</button>
                     </div>
                     <ul class="tariff-block__list">
                         <li class="tariff-block__item"><span class="tariff-block__text wow fadeIn">Тестовый период 7 дней</span><span class="tariff-block__icon"><i class="icon-ok"></i></span></li>
@@ -224,7 +225,7 @@
                     <div class="tariff-block__wrap">
                         <h3 class="tariff-block__title">Premium</h3>
                         <div class="tariff-block__price"><span>999₽</span> / месяц или <span>8400₽</span> / год</div>
-                        <button class="tariff-block__btn btn enter">Создать сайт</button>
+                        <button class="tariff-block__btn btn">Создать сайт</button>
                     </div>
                     <ul class="tariff-block__list">
                         <li class="tariff-block__item"><span class="tariff-block__text wow fadeIn">Тестовый период 7 дней</span><span class="tariff-block__icon"><i class="icon-ok"></i></span></li>
@@ -247,12 +248,12 @@
                         <div class="tariff-block__wrap">
                             <h3 class="tariff-block__title wow fadeIn">Basic</h3>
                             <div class="tariff-block__price wow fadeIn"><span>499₽</span> / месяц или <span>4200₽</span> / год</div>
-                            <button class="tariff-block__btn btn enter wow fadeIn">Создать сайт</button>
+                            <button class="tariff-block__btn btn wow fadeIn">Создать сайт</button>
                         </div>
                         <div class="tariff-block__wrap">
                             <h3 class="tariff-block__title wow fadeIn">Premium</h3>
                             <div class="tariff-block__price wow fadeIn"><span>999₽</span> / месяц или <span>8400₽</span> / год</div>
-                            <button class="tariff-block__btn btn enter wow fadeIn">Создать сайт</button>
+                            <button class="tariff-block__btn btn wow fadeIn">Создать сайт</button>
                         </div>
                     </div>
                     <ul class="tariff-block__list">
@@ -357,54 +358,28 @@
                 </ul>
                 <ul class="footer__list">
                     <li class="footer__item">Контакты</li>
-                    <li class="footer__item"><a class="footer__link" href="malito:support@prostoweb.net">support@prostoweb.net</a></li>
+                    <li class="footer__item"><a class="footer__link" href="malito:support@spasico.ru">support@spasico.ru</a></li>
                 </ul>
             </div>
             <div class="footer__block-two">
                 <ul class="footer__list">
                     <li class="footer__item">Политика конфиденциальности</li>
-                    <li class="footer__item">© 2022 prostoweb.net. All rights reserved</li>
+                    <li class="footer__item">© 2022 spasico.ru. All rights reserved</li>
                 </ul>
             </div>
         </div>
     </footer>
 
-    <section class="popup popup-user" id="popupUser">
-        <button class="popup__btn popup__btn-user"><i class="icon-close02"></i></button>
-        <h2 class="popup__title">Войти или зарегистрироваться</h2>
-        <p class="popup__text">На указанный номер телефона поступит телефонный звонок, необходимо будет ввести 4 последние цифры номера с которого был звонок</p>
-
-        <form class="popup__user-form" action="#">
-            <label class="popup__label">
-                <span class="popup__span">Имя <span class="popup__elem">*</span></span>
-                <input class="popup__input" type="text" placeholder="+79999999999">
-            </label>
-            <button class="btn btn--blue" type="submit">Отправить</button>
-        </form>
-    </section>
-
-    <section class="popup popup-code" id="popupCode">
-        <button class="popup__btn"><i class="icon-close02"></i></button>
-        <h2 class="popup__title">Войти или зарегистрироваться</h2>
-        <p class="popup__text">Введите 4 последние цифры номера с которого был звонок</p>
-
-        <form class="popup__code-   form" action="#">
-            <label class="popup__label popup__label--row">
-                <input class="popup__input popup__input--number" type="text" >
-                <input class="popup__input popup__input--number" type="text" >
-                <input class="popup__input popup__input--number" type="text" >
-                <input class="popup__input popup__input--number" type="text" >
-            </label>
-            <button class="btn btn--blue" type="submit">Отправить</button>
-        </form>
-    </section>
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/jquery.enllax.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/app.js"></script>
     <script>
         new WOW().init();
+
+        $(window).enllax();
     </script>
+
 </body>
 </html>

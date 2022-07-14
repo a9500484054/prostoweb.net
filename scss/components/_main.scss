@@ -276,7 +276,17 @@
 }
 
 @media (min-width: $screen-desktop) {
+    .header {
+        &__wrap {
+            padding-left: 70px;
+            padding-right: 70px;
+        }
+    }
     .hero {
+        &__wrap {
+            padding-left: 70px;
+            padding-right: 70px;
+        }
         &__title {
             max-width: 753px;
             font-size: 92px;
@@ -290,5 +300,9 @@
         &__wrap {
             position: relative;
         }
+        &__btn {
+            margin-bottom: 80px;
+        }
     }
+
 }

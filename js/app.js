@@ -39,56 +39,25 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
 
-    const startWrapper = document.querySelector('.start__wrapper');
-    const listElemItem = document.querySelectorAll('.list-elem__item');
-    const listTextItem = document.querySelectorAll('.list-text__item');
+    // const startWrapper = document.querySelector('.start__wrapper');
+    // const listElemItem = document.querySelectorAll('.list-elem__item');
+    // const listTextItem = document.querySelectorAll('.list-text__item');
 
-    if (startWrapper) {
-        startWrapper.addEventListener('mouseover', (e) => {
-            if (e.target.classList.contains('list-elem__item')) {
-                const tabsPath = e.target.dataset.tabsPath;
-                listElemItem.forEach(el => {el.classList.remove('list-elem__item--active')});
-                document.querySelector(`[data-tabs-path="${tabsPath}"]`).classList.add('list-elem__item--active');
-                umInvestorFeaturesHandler(tabsPath);
-            }
-        });
-    }
+    // if (startWrapper) {
+    //     startWrapper.addEventListener('mouseover', (e) => {
+    //         if (e.target.classList.contains('list-elem__item')) {
+    //             const tabsPath = e.target.dataset.tabsPath;
+    //             listElemItem.forEach(el => {el.classList.remove('list-elem__item--active')});
+    //             document.querySelector(`[data-tabs-path="${tabsPath}"]`).classList.add('list-elem__item--active');
+    //             umInvestorFeaturesHandler(tabsPath);
+    //         }
+    //     });
+    // }
     
-    const umInvestorFeaturesHandler = (path) => {
-        listTextItem.forEach(el => {el.classList.remove('list-text__item--active')});
-        document.querySelector(`[data-tabs-target="${path}"]`).classList.add('list-text__item--active');
-    };
-
-    const enter = document.querySelectorAll('.enter');
-    const popupBtnClose = document.querySelectorAll('.popup__btn');
-    const popupUser = document.querySelector('.popup-user');
-    const popupCode = document.querySelector('.popup-code');
-    const popupUserForm = document.querySelector('.popup__user-form');
-    const popupCodeForm = document.querySelector('.popup__code-form');
-
-
-    enter.forEach((el) => {
-        el.addEventListener('click', (e) => {
-            popupUser.classList.add('popup-user--active')
-        });
-    });
-    popupBtnClose.forEach((el) => {
-        el.addEventListener('click', (e) => {
-            popupUser.classList.remove('popup-user--active')
-            popupCode.classList.remove('popup-code--active')
-
-        });
-    });
-
-    popupUserForm.addEventListener('submit', () => {
-        popupUser.classList.remove('popup-user--active')
-        popupCode.classList.add('popup-code--active')
-
-    });
-
-    popupCodeForm.addEventListener('submit', () => {
-        popupCode.classList.remove('popup-code--active')
-    });
+    // const umInvestorFeaturesHandler = (path) => {
+    //     listTextItem.forEach(el => {el.classList.remove('list-text__item--active')});
+    //     document.querySelector(`[data-tabs-target="${path}"]`).classList.add('list-text__item--active');
+    // };
 });
 
 $('a[href^="#"]').click(function(){ // #1

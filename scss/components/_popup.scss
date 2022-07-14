@@ -1,6 +1,4 @@
 .popup {
-    position: fixed;
-    top: -900px;
     background: linear-gradient(241.63deg, #6070FF 0%, #0A0A11 100%);
     max-width: 512px;
     border-radius: 40px;
@@ -73,11 +71,11 @@
         }
     }
 }
-.popup-code--active,
-.popup-user--active {
-    top:10%;
-    left: 0;
+
+.popup-code {
+    display: none;
 }
+
 
 
 @media (min-width: $screen-table) {
