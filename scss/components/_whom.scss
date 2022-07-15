@@ -83,7 +83,9 @@
         &:nth-child(3) {
             right: 20%;
             bottom: 2%;
-    
+        }
+        &--active {
+            background: rgba(255, 255, 255, 0.74);
         }
     }
 }
